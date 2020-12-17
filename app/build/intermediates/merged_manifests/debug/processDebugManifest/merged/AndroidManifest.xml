@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aleks.allnews"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/allnews"
+        android:label="All News"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.example.aleks.allnews.SplashScreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aleks.allnews.MainActivity"
+            android:label="All News"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.aleks.allnews.Category.Business"
+            android:label="Bisnis" />
+        <activity
+            android:name="com.example.aleks.allnews.Category.Entertainment"
+            android:label="Hiburan" />
+        <activity
+            android:name="com.example.aleks.allnews.Category.Health"
+            android:label="Kesehatan" />
+        <activity
+            android:name="com.example.aleks.allnews.Category.Science"
+            android:label="Sains" />
+        <activity
+            android:name="com.example.aleks.allnews.Category.Sports"
+            android:label="Olahraga" />
+        <activity
+            android:name="com.example.aleks.allnews.Category.Technology"
+            android:label="Teknologi" />
+        <activity
+            android:name="com.example.aleks.allnews.DetailActivity"
+            android:label="Detail Berita" />
+        <activity
+            android:name="com.example.aleks.allnews.About"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PopUp" />
+    </application>
+
+</manifest>
